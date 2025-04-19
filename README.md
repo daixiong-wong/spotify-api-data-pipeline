@@ -1,6 +1,3 @@
-# spotify-api-data-pipeline
-Batch Data Processing from Spotify API
-
 # Batch Data Processing Using Spotify API
 
 ## Overview
