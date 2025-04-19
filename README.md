@@ -2,35 +2,30 @@
 In this project, I will use Python, AWS, and Spotify's API to build a scalable data pipeline that extracts, transforms, and stores information about newly released albums and artists. This serves as a practical exercise in data engineering, showcasing skills in API integration, cloud workflows, and structured data processing. The project serves as a foundation for performing trend analyses and creating interactive dashboards to visualize music release patterns.
 
 ## Overview
-This project demonstrates batch data processing by interacting with the Spotify API to extract and save information about new album releases. It includes functionality for API authentication, paginated data retrieval, and data storage in AWS S3 buckets.
+This project implements a batch data processing pipeline that interacts with the Spotify API to extract and save detailed information about newly released albums. The pipeline includes API authentication, handling paginated responses for large datasets, and storing structured data in AWS S3 buckets for scalable storage and further analysis.
 
 ## Scripts
-1. **authentication.py**: Contains the `get_token` function to authenticate with the Spotify API and retrieve an access token.
-2. **endpoint.py**: Contains the `get_paginated_new_releases` function to fetch details of new album releases in a paginated format.
-3. **main.py**: The main script orchestrates the API call, extracts album details, and stores the processed data in an S3 bucket.
+1. **endpoint.py**: Contains the 'get_paginated_new_releases' function, which handles paginated API calls to fetch comprehensive details about new album releases, including album and artist information.
+2. **main.py**: The main script:
+-- Authenticates with the Spotify API to obtain an access token.
+-- Extracts album and artist data from the 'Get New Releases' endpoint.
+-- Processes the data into a flattened format suitable for storage.
+-- Saves the structured data as a CSV file and uploads it to an AWS S3 bucket.
 
 ## Features
 - Authentication with Spotify's API.
 - Programmatic handling of paginated API responses for large datasets.
 - Automated creation of an S3 bucket and storage of album details in CSV format.
 
-## Getting Started
-1. **Prerequisites**:
-   - Python 3.x
-   - Spotify Developer Account (API Key required)
-   - AWS Account with access to S3
-2. **Installation**:
-   - Install required libraries using:
-     ```
-     pip install -r requirements.txt
-     ```
-3. **Run the Scripts**:
-   - Execute `main.py` after ensuring `authentication.py` and `endpoint.py` are correctly configured.
-
-## Output
-- A CSV file containing details of new album releases.
-- The processed file is stored in a programmatically created AWS S3 bucket.
-
+## Tools and Software Used
+- **Python**: Primary programming language for developing the pipeline.
+- **Requests**: For making HTTP requests to the Spotify API and handling responses.
+- **Pandas**: For data transformation and converting JSON data into CSV format.
+- **Boto3**: For interacting with AWS S3 services, including file uploads.
+- **Dotenv**: For securely managing environment variables.
+- **Spotify API**: Source of the data for album and artist information.
+- **AWS S3**: Cloud storage for scalability and accessibility of processed data.
+- 
 ## Future Improvements
 - Extend functionality to retrieve additional data like track details or artist information.
 - Add data validation steps to ensure robustness.
