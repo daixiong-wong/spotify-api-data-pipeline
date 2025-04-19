@@ -4,7 +4,6 @@ In this project, I will use Python, AWS, and Spotify's API to build a scalable d
 <div align="center">
     <img src="img/spotify-api-data-pipeline.png" alt="Spotify Data Pipeline" width="500">
 </div>
-
 ## Overview
 This project implements a batch data processing pipeline that interacts with the Spotify API to extract and save detailed information about newly released albums. The pipeline includes API authentication, programmatic handling paginated responses for large datasets, and storing structured data in AWS S3 buckets for scalable storage and further analysis.
 
