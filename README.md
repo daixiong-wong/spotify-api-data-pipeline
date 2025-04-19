@@ -1,4 +1,5 @@
 # Batch Data Processing Using Spotify API
+In this project, I will use Python, AWS, and Spotify's API to build a scalable data pipeline that extracts, transforms, and stores information about newly released albums and artists. This serves as a practical exercise in data engineering, showcasing skills in API integration, cloud workflows, and structured data processing. The project serves as a foundation for performing trend analyses and creating interactive dashboards to visualize music release patterns.
 
 ## Overview
 This project demonstrates batch data processing by interacting with the Spotify API to extract and save information about new album releases. It includes functionality for API authentication, paginated data retrieval, and data storage in AWS S3 buckets.
