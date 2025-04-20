@@ -29,7 +29,7 @@ Before uploading data, an Amazon S3 bucket must be created to store the processe
 - Enter the bucket name `de-project-spotify-api-968807950973` and create bucket.
 
 <div align="center">
-    <img src="img/s3-bucket.png" alt="Spotify Data Pipeline" width="300">
+    <img src="img/s3-bucket.png" alt="Spotify Data Pipeline" width="1000">
 </div>
 
 ### Step 3: Paginated Data Retrieval
