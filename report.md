@@ -219,7 +219,7 @@ Navigate to the S3 bucket on the AWS Management Console.
 Under the Objects tab, we should see the album_details.csv file listed as shown below.
 
 <div align="center">
-    <img src="img/csv-file.png" alt="Spotify Data Pipeline" width="600">
+    <img src="img/csv-file.png" alt="Spotify Data Pipeline" width="1000">
 </div>
 
 ### Summary and Future Improvements
