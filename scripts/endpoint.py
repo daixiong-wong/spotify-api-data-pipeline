@@ -9,7 +9,6 @@ def get_paginated_new_releases(base_url: str, access_token: str) -> list:
     while request_url:
         response = requests.get(url=request_url, headers=headers)
 
-        # Check for request success
         if response.status_code != 200:
             print(f"Error: Status code {response.status_code}")
             break
