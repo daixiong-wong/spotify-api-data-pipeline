@@ -50,7 +50,7 @@ def main():
 
     s3 = boto3.client('s3')
     s3.put_object(Bucket=AWS_BUCKET_NAME, Key="album_details.csv", Body=csv_buffer.getvalue(), ContentType="text/csv")
-    print("File successfully uploaded to S3 bucket as 'album_details_v1.csv'")
+    print("File successfully uploaded to S3 bucket as 'album_details.csv'")
 
 if __name__ == "__main__":
     main()
