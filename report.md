@@ -215,6 +215,13 @@ s3.put_object(
 )
 ```
 
+Navigate to the S3 bucket on the AWS Management Console. 
+Under the Objects tab, we should see the album_details.csv file listed as shown below.
+
+<div align="center">
+    <img src="img/csv-file.png" alt="Spotify Data Pipeline" width="600">
+</div>
+
 ### Summary and Future Improvements
 #### Key Workflow Summary:
 1. Authentication: Securely access the Spotify API using OAuth 2.0.
