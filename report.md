@@ -28,6 +28,10 @@ Before uploading data, an Amazon S3 bucket must be created to store the processe
 - Navigate to the S3 service and click Create Bucket.
 - Enter the bucket name `de-project-spotify-api-968807950973` and create bucket.
 
+<div align="center">
+    <img src="img/s3-bucket.png" alt="Spotify Data Pipeline" width="500">
+</div>
+
 ### Step 3: Paginated Data Retrieval
 
 Spotify's `Get New Releases` endpoint provides data in a paginated format, meaning multiple requests are needed to fetch all available results. 
