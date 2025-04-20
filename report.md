@@ -28,9 +28,7 @@ Before uploading data, an Amazon S3 bucket must be created to store the processe
 - Navigate to the S3 service and click Create Bucket.
 - Enter the bucket name `de-project-spotify-api-968807950973` and create bucket.
 
-<div align="center">
-    <img src="img/s3-bucket.png" alt="Spotify Data Pipeline" width="1000">
-</div>
+![S3 Bucket](img/s3-bucket.png)
 
 ### Step 3: Paginated Data Retrieval
 
@@ -216,11 +214,9 @@ s3.put_object(
 ```
 
 Navigate to the S3 bucket on the AWS Management Console. 
-Under the Objects tab, we should see the album_details.csv file listed as shown below.
+Under the Objects tab, we should see the `album_details.csv` file listed as shown below.
 
-<div align="center">
-    <img src="img/csv-file.png" alt="Spotify Data Pipeline" width="1000">
-</div>
+![S3 Bucket](img/csv-file.png)
 
 ### Summary and Future Improvements
 #### Key Workflow Summary:
@@ -233,15 +229,4 @@ Under the Objects tab, we should see the album_details.csv file listed as shown 
 1. Automate Pipeline: Use AWS Lambda or Apache Airflow to schedule periodic data extraction.
 2. Data Modeling: Convert raw data into dimensional models for advanced analysis.
 3. Visualization: Use Amazon QuickSight to create dashboards showcasing album trends and artist activity.
-
-
-
-
-
-
-
-
-
-
-
-
+4. 
