@@ -42,15 +42,14 @@ def main():
         for artist in album.get("artists", [])
     ]
 
+    csv_buffer = io.StringIO()
     df = pd.DataFrame(flattened_album_details)
-    local_csv_path = "album_details.csv"
-    df.to_csv(local_csv_path, index=False, encoding="utf-8")
-    print(f"Data successfully saved to {local_csv_path}")
+    df.to_csv(csv_buffer, index=False, encoding="utf-8")
+    print("Data successfully saved")
 
-    # Step 5: Upload the CSV to S3
     s3 = boto3.client('s3')
-    s3.upload_file(local_csv_path, AWS_BUCKET_NAME, "album_details.csv")
-    print("File successfully uploaded to S3 bucket as 'album_details.csv'")
+    s3.put_object(Bucket=AWS_BUCKET_NAME, Key="album_details.csv", Body=csv_buffer.getvalue(), ContentType="text/csv")
+    print("File successfully uploaded to S3 bucket as 'album_details_v1.csv'")
 
 if __name__ == "__main__":
     main()
