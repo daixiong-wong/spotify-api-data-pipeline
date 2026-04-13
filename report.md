@@ -229,4 +229,3 @@ Under the Objects tab, we should see the `album_details.csv` file listed as show
 1. Automate Pipeline: Use AWS Lambda or Apache Airflow to schedule periodic data extraction.
 2. Data Modeling: Convert raw data into dimensional models for advanced analysis.
 3. Visualization: Use Amazon QuickSight to create dashboards showcasing album trends and artist activity.
-4. 
